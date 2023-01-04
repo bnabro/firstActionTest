@@ -1,0 +1,4 @@
+CC=gcc
+CFLAGS=-I.
+hellomake: main.o
+	$(CC) -o hellomake main.o

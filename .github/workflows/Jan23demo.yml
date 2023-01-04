@@ -1,0 +1,12 @@
+name: JanuaryDemo
+run-name: ${{ github.actor }} is testing a Makefile build
+on: push
+
+jobs:
+ JanuaryDemo:
+  runs-on: ubuntu-latest
+  steps:
+   - name: checkout repo
+     uses: actions/checkout@v2
+   - name: build application
+     run: make hellomake
