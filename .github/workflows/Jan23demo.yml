@@ -1,12 +1,11 @@
- name: JanuaryDemo
+name: JanuaryDemo
+on: push
 
-   on: [push,pull_request]
-
-   jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-      - name: checkout repo
-        uses: actions/checkout@v2
-      - name: build application
-        run: make hellomake
+jobs:
+ JanuaryDemo:
+  runs-on: ubuntu-latest
+  steps:
+   - name: checkout repo
+     uses: actions/checkout@v2
+   - name: build application
+     run: make hellomake
