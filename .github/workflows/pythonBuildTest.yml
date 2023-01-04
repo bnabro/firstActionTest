@@ -1,5 +1,6 @@
 name: "Workflow example"
 on:
+  push:
   schedule:
     - cron: '*/10 * * * *'
 
