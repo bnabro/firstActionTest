@@ -1,5 +1,5 @@
-all:
-      g++ -std=c++17 main.c -o hello
+CC=gcc
+CFLAGS=-I.
 
-clean:
-      $(RM) hello
+hellomake: main.o
+     $(CC) -o hellomake main.o
