@@ -1,4 +1,5 @@
 name: JanuaryDemo
+run-name: ${{ github.actor }} is testing a Makefile build
 on: push
 
 jobs:
